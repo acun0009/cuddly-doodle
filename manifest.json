@@ -1,0 +1,17 @@
+{
+    "name": "atlas",
+    "short_name": "ats",
+    "display": "standalone",
+    "star_url": "./index.html",
+    "description": "i love cats",
+    "icons": [
+        {
+            "src":  "./imgfavicon-16x16.png",
+            "sizes": "16x16",
+            "type": "img/png"
+        }
+    ],
+    "orientation": "portrait-primary",
+    "theme_color": "#bada55",
+    "background_colour": "#eeeeee"
+}
