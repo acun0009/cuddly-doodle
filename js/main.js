@@ -43,4 +43,29 @@ function init() {
     log('hello');
     log('yikes', 'warn');
     log('oh no', 'error');
+
+    feedback('Something happpened', 'error');
+}
+
+function feedback(msg, level='info') {
+    let dialog = document.getElementById('feedback');
+    let title = dialog.querySelector('.title');
+    let message = dialog.querySelector('.message');
+    let button = dialog.querySelector('.actions button');
+    title.textContent = 'User feedback';
+    message.textContent = msg;
+    dialog.className = level;
+    dialog.showModal();
+    button.addEventListener('click',(ev) => dialog.close(), { once: true });
+
+    switch(level) {
+        case 'info':
+            break;
+        case 'warn':
+            break;
+        case 'error':
+            break;
+        case 'success':
+            break;
+    }
 }

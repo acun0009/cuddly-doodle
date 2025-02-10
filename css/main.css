@@ -2,3 +2,46 @@
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
 }
+
+::backdrop {
+    background-color: hsla(0, 50%, 10%, 0.48);
+}
+
+dialog {
+
+    button {
+        outline: none;
+        border: none;
+        border-radius: 0.25rem;
+        margin: 0.25rem 2rem;
+    }
+    &.info {
+        color: cornflowerblue;
+        & button {
+            background-color: cornflowerblue;
+            color: white;
+        }
+    }
+    &.warn {
+        color:goldenrod;
+        & button {
+            background-color: goldenrod;
+            color: white;
+        }
+    }
+    &.error {
+        color: red;
+        & button {
+            background-color: red;
+            color: white;
+        }
+    }
+    &.success {
+        color: green;
+
+        & button {
+            background-color: green;
+            color: white;
+        }
+    }
+}
